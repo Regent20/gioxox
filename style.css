@@ -1,0 +1,64 @@
+nav {
+    width: 100%;
+    padding: 0 30px;
+    background-image: url(./Immagini/Grafica.jpg);
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: #fff;
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    border: lpx solid #4bf5f5;
+    border-bottom: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu .has-children:hover .sub-menu {
+    transition: .5s;
+    visibility: visible;
+    opacity: 1;
+    top: 50px;
+}
+
+.sub-menu li {
+    width: 200px;
+    font-size: 12px;
+    border-bottom: 1px solid #4bf5f5;
+}
+
+.sub-menu a {
+    color: white;
+}
+
+.sub-menu a:hover {
+    background: #4bf5f5;
+    color: #fff;
+}
+
+.testo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
